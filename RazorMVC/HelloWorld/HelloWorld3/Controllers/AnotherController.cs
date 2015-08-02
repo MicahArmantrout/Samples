@@ -1,11 +1,11 @@
-﻿using HelloWorld.Models;
+﻿using HelloWorld3.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace HelloWorld.Controllers
+namespace HelloWorld3.Controllers
 {
     public class AnotherController : Controller
     {
@@ -15,7 +15,7 @@ namespace HelloWorld.Controllers
         //  i.e. http://localhost:51706/Another
         public ActionResult Index(string MyObjectValue)
         {
-            var obj = new MyChild { MyValue = MyObjectValue };
+            var obj = new MySecondModel { MyValue = MyObjectValue };
             return View(obj);
         }
     }

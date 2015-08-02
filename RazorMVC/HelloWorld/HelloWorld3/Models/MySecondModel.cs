@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HelloWorld.Models
+namespace HelloWorld3.Models
 {
     // Another trivial model for demonstration purposes
     // It will be used to communicate text between controller and view
-    public class MyChild
+    public class MySecondModel
     {
         public string MyValue { get; set; }
     }

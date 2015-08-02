@@ -3,11 +3,24 @@ and provide hints for constructing, deconstructing, or extending this or other R
 
 FWIW: Razor = syntax and associated rendering engine which allows for embedded C#/HTML (hence the .cshtml file extension).
 
-Simply running the project should launch a browser on localhost:51706
- (or whatever the project URL is set for in the project's Web properties page)
+Simply running each project should launch a browser on localhost:nnnn
+ where nnnn is the port number for the project
 
-The Hello World page should appear in the browser.
+HelloWorld is the simplest possible working MVC project (just a controller and a view) and demonstrates the ViewBag
 
-The Hello World page derives its HTML from Views/Home/Index.cshtml, and is associated with the Index method of HomeController.
+HelloWorld2 introduces models, a second view on the same controller, and a simple way to construct a link between the views
 
-This project contains numerous NuGet and other references, some of which are likely unnecessary (to be cleaned out)
+HelloWorld3 adds a second controller and a couple of variations on linking
+
+NOTES:
+
+All of the projects in this solution were created in Visual Studio 2013 using the "Empty" ASP.NET MVC 4 Web Application template
+
+i.e. in the "Add New Project" wizard, choose "ASP.NET MVC 4 Web Application",
+     then choose "Empty", and make sure the view engine is set to "Razor".
+
+When adding views, make sure they are in the Views folder, in subfolders named for the corresponding controller
+
+Some extraneous files were removed from App_Start, as well as corresponding actions in the Application_Start (Global.asax.cs)
+
+This solution contains numerous NuGet and other references, some of which are likely unnecessary (to be cleaned out)
