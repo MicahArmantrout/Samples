@@ -1,4 +1,8 @@
-This project is intended to be a very simple Razor MVC app to illustrate the main elements which make it a Razor MVC app,
+Motivated by the issues described by this stackoverflow question:
+
+http://stackoverflow.com/questions/31737223/using-razor-without-mvc-in-vs-2013-and-2015
+
+...this project is intended to be a very simple Razor MVC app to illustrate the main elements which make it a Razor MVC app,
 and provide hints for constructing, deconstructing, or extending this or other Razor MVC apps.
 
 FWIW: Razor = syntax and associated rendering engine which allows for embedded C#/HTML (hence the .cshtml file extension).

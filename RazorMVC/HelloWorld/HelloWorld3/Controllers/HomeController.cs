@@ -23,9 +23,7 @@ namespace HelloWorld3.Controllers
             var model = new MyFirstModel { SomeValue = "I am here!" };
 
             // Display the view (Home/Index)
-            // Note: we don't have to associate a model with our view...
-            //  could have simply done something like return View()
-            //  but we would have had to communicate data from controller to view via the ViewBag
+            // Pass the model to the view as a parameter in the View method call
             return View(model);
         }
 

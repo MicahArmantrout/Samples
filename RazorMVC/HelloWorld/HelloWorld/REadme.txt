@@ -11,3 +11,11 @@ The Hello World page should appear in the browser.
 
 The Hello World page derives its HTML from Views/Home/Index.cshtml, and is associated with the Index method of HomeController.
 
+NOTES:
+
+Controllers are added by right-clicking on the Controllers folder in the Solution Explorer, and choosing Add -> Controller
+
+To add a view:
+1.  Add a folder under Views and give it the same name as the controller
+2.  Right click on the folder and choose Add -> View
+     Turn off all options for the simple case as shown here
