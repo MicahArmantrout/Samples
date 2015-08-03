@@ -16,6 +16,8 @@ HelloWorld2 introduces models, a second view on the same controller, and a simpl
 
 HelloWorld3 adds a second controller and a couple of variations on linking
 
+HelloWorld4 demonstrates a simple form posting
+
 NOTES:
 
 All of the projects in this solution were created in Visual Studio 2013 using the "Empty" ASP.NET MVC 4 Web Application template
