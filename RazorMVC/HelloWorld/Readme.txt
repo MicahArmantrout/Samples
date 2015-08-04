@@ -28,5 +28,3 @@ i.e. in the "Add New Project" wizard, choose "ASP.NET MVC 4 Web Application",
 When adding views, make sure they are in the Views folder, in subfolders named for the corresponding controller
 
 Some extraneous files were removed from App_Start, as well as corresponding actions in the Application_Start (Global.asax.cs)
-
-This solution contains numerous NuGet and other references, some of which are likely unnecessary (to be cleaned out)
