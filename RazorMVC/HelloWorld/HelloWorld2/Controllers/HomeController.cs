@@ -1,9 +1,5 @@
-﻿using HelloWorld2.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using HelloWorld2.Models;
 
 namespace HelloWorld2.Controllers
 {
@@ -20,7 +16,7 @@ namespace HelloWorld2.Controllers
             ViewBag.Data = "World!";
 
             // Instantiate a model to be associated with our view
-            var model = new MyFirstModel { SomeValue = "I am here!" };
+            var model = new MyFirstModel {SomeValue = "I am here!"};
 
             // Display the view (Home/Index)
             // Pass the model to the view as a parameter in the View method call
@@ -32,9 +28,8 @@ namespace HelloWorld2.Controllers
         public ActionResult Linked(string MyObjectValue)
         {
             // This view also has an associated model
-            var model = new MySecondModel { MyValue = MyObjectValue };
+            var model = new MySecondModel {MyValue = MyObjectValue};
             return View(model);
         }
-
     }
 }

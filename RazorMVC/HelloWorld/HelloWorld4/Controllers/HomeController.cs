@@ -1,10 +1,7 @@
-﻿using HelloWorld4.Models;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Web;
 using System.Web.Mvc;
+using HelloWorld4.Models;
 
 namespace HelloWorld4.Controllers
 {
@@ -15,7 +12,7 @@ namespace HelloWorld4.Controllers
         public ActionResult Index()
         {
             // We can initialize our form via the associated model
-            var myData = new MyFormData { SomeValue = "3" };
+            var myData = new MyFormData {SomeValue = "3"};
             return View(myData);
         }
 
@@ -26,7 +23,7 @@ namespace HelloWorld4.Controllers
         {
             // We do (or initiate) our form data processing here
             // We can get the framework to do data validation for us, but that's beyond the scope of this example.
-            Debug.WriteLine(String.Format("Name = {0}, IsTrue = {1}, SomeValue = {2}", myData.Name, myData.IsTrue, myData.SomeValue));
+            Debug.WriteLine("Name = {0}, IsTrue = {1}, SomeValue = {2}", myData.Name, myData.IsTrue, myData.SomeValue);
 
             // Done... we choose to redirect to a new page.
             // In this example, we redirect back to ourself. This will call the Get method for our page (will have the appearance of resetting the form).

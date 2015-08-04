@@ -6,31 +6,31 @@
 @model HelloWorld2.Models.MyFirstModel /* This is needed to strongly type the model passed from the controller; it would otherwise be dynamic */
 
 <!--
-    This is the view associated with the Index action of the Home controller
+This is the view associated with the Index action of the Home controller
 
-    Note that views must be in the Views folder, with a folder/file naming pattern matching that of the Controller/Action.
+Note that views must be in the Views folder, with a folder/file naming pattern matching that of the Controller/Action.
 
-    TODO: understand how it relates to the routing template i.e. whether the organization of views must match the
-          URL naming pattern or whether it will always be Views/{controller}/{action}
+TODO: understand how it relates to the routing template i.e. whether the organization of views must match the
+URL naming pattern or whether it will always be Views/{controller}/{action}
 -->
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width"/>
     <title>Hello, World</title>
 </head>
 <body>
-    <div>
-        Hello @viewBagData
-    </div>
-    <p>
-        @Model.SomeValue
-    </p>
-    <!-- We can create hotlinks in a few different ways... -->
-    <!-- Note that MyObjectValue is the name of a URL querystring parameter -->
-    <!-- An action (another view) on the same controller... -->
-    <p>@Html.ActionLink("Link text for my first link", "Linked", new { MyObjectValue = "Some link value" })</p>
+<div>
+    Hello @viewBagData
+</div>
+<p>
+    @Model.SomeValue
+</p>
+<!-- We can create hotlinks in a few different ways... -->
+<!-- Note that MyObjectValue is the name of a URL querystring parameter -->
+<!-- An action (another view) on the same controller... -->
+<p>@Html.ActionLink("Link text for my first link", "Linked", new {MyObjectValue = "Some link value"})</p>
 </body>
 </html>
