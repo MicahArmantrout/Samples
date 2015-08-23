@@ -25,6 +25,10 @@ namespace Exceptions
             var exception = Server.GetLastError();
             if (exception != null)
             {
+                // This would be a good place to log any relevant details about the exception.
+                // Since we are going to pass exception information to our error page via querystring,
+                // it will only be practical to issue a short message. Further detail would have to be logged somewhere.
+
                 // This will invoke our error page, passing the exception message via querystring parameter
                 // Note that we chose to use Server.TransferRequest, which is only supported in IIS 7 and above.
                 // As an alternative, Response.Redirect could be used instead.
