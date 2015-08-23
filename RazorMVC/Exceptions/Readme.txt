@@ -1,5 +1,7 @@
 This project demonstrates a simple way to intercept exceptions and display a user-friendly error page
 
+See: http://stackoverflow.com/questions/13905164/how-to-make-custom-error-pages-work-in-asp-net-mvc-4/32169169#32169169
+
 The home page contains a link to a second page.
 Any attempt to load the second page should cause an exception to be thrown.
 Response to the exception should be display of the exception message on an error page.
